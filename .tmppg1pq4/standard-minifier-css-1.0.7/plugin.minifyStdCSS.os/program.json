@@ -1,0 +1,25 @@
+{
+  "format": "javascript-image-pre1",
+  "arch": "os",
+  "load": [
+    {
+      "sourceMap": "packages/underscore.js.map",
+      "path": "packages/underscore.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/meteor/node_modules",
+      "sourceMap": "packages/meteor.js.map",
+      "path": "packages/meteor.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/minifier-css/node_modules",
+      "sourceMap": "packages/minifier-css.js.map",
+      "path": "packages/minifier-css.js"
+    },
+    {
+      "node_modules": "npm/node_modules/meteor/minifyStdCSS/node_modules",
+      "sourceMap": "packages/minifyStdCSS_plugin.js.map",
+      "path": "packages/minifyStdCSS_plugin.js"
+    }
+  ]
+}

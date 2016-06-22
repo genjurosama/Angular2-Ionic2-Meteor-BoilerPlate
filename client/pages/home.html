@@ -1,0 +1,24 @@
+<ion-navbar *navbar primary>
+    <ion-buttons start>
+    </ion-buttons>
+    <ion-title>Meteor Ionic (Angular2)</ion-title>
+    <ion-buttons end>
+        <button royal (click)="add()">
+            <ion-icon name="add"></ion-icon>
+        </button>
+    </ion-buttons>
+</ion-navbar>
+
+<ion-content>
+    <ion-card *ngFor="#note of notes">
+        <ion-card-content>
+            <ion-card-header>
+                {{note.title}}
+            </ion-card-header>
+            <p>{{note.text}}</p>
+        </ion-card-content>
+        <ion-item>
+            <button clear item-left (click)="delete(note)">Delete</button>
+        </ion-item>
+    </ion-card>
+</ion-content>
